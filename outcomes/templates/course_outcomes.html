@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Form</title>
+</head>
+<body>
+        <h1>Course Outcomes</h1>
+        <form name="register" method="post" action="/course_outcomes/insertuser/">
+            {%csrf_token %}
+            <prev>
+                course_name:<input type="text" name="tucname" value=""width="200"><br>
+                description:<input type="text" name="tudes" value=""width="200"><br>
+                contact_hours:<input type="text" name="tuchours" value=""width="200"><br>
+                marks:<input type="text" name="tumarks" value=""width="200"><br>
+                <input type="submit" name="submit" value="click to submit" width="300" height="100">   
+            </prev>
+        </form>    
+</body>
+</html>
